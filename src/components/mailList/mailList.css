@@ -1,0 +1,68 @@
+.mail{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #003580;
+    color: white;   
+    align-items: center ;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mailInputContainer>input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.mailInputContainer>input::placeholder{
+    color: grey;
+}
+
+.mailInputContainer>button{
+    /* height: 50px; */
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #2d84ff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+}
+
+.mailInputContainer>button:hover{
+    background-color: #FFA500;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

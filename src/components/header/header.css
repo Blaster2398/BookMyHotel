@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: #003b95;
+    color: white;
+    padding: 20px 0;
+    /* position: relative; */
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.headerContainer.listMode {
+    margin-bottom: 0;
+}
+
+.headerList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headerListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    background-color: #003b95;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: calc(20% - 10px);
+}
+
+.headerListItem:hover {
+    transform: scale(1.1);
+    background-color: #2266cc;
+    color: white;
+}
+
+.headerListItem.active {
+    border: 2px solid white;
+    color: #003b95;
+    background-color: white;
+}
+
+.headerListItem .fa-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.headerListItem span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.headerTitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.headerTitle h1 {
+    margin-bottom: 10px;
+}
+
+.headerDesc {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.headerBtn {
+    background-color: white;
+    color: #003b95;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.headerBtn:hover {
+    background-color: #2d84ff;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+.headerSearch {
+    height: 60px;
+    background-color: #febb02;
+    border: 1px solid #febb02;
+    border-radius: 5px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1080px;
+    /* position: relative; */
+    bottom: -90px;
+    left: 65px;
+}
+
+.headerSearchItem {
+    display: flex;
+    height: 57px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border: 3px solid #febb02; /* Added border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color for items */
+ 
+}
+
+.headerSearchItem.loc{
+    min-width: 300px;
+}
+
+.headerSearchItem.btn{
+    width: fit-content;
+    padding: 0 ;
+    border-radius: 5px;
+}
+
+.headerIcon {
+    color: darkgrey;
+}
+
+.headerSearchInput {
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.headerSearchText {
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.headerSearchBtn {
+    height: 100%;
+    background-color: #2d84ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.headerSearchBtn:hover {
+    background-color: #febb02;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+.headerDateRange {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.6);
+}
+
+.options {
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    background-color: #fff;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.optionCounterButton:hover {
+    background-color: #0071c2;
+    color: white;
+}
+
+.optionCounterButton:active {
+    background-color: #005aa7;
+    color: white;
+}
+
+.optionCounterButton:disabled {
+    background-color: lightgrey;
+    color: white;
+    cursor: not-allowed;
+}

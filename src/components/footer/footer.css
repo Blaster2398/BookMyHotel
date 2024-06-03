@@ -1,0 +1,48 @@
+
+.footer {
+    width: 100%;
+    max-width: 1200px; /* Ensuring max width */
+    margin: 0 auto; /* Centering the footer */
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background for contrast */
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #e0e0e0; /* Subtle border on top */
+    
+}
+
+.fLists {
+    
+    display: flex;
+    flex-wrap: wrap; /* Ensure the lists wrap on smaller screens */
+    justify-content: space-between; /* Space out the lists */
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.fList {
+    list-style: none;
+    padding: 0 10px;
+    flex: 1 1 200px; /* Flexbox properties to ensure responsiveness */
+    min-width: 150px; /* Minimum width to prevent too narrow columns */
+}
+
+.fListItem {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #003580;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.fListItem:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: translateX(5px); /* Slight shift on hover */
+}
+
+.fText {
+    text-align: center;
+    color: #777; /* Subtle color for footer text */
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0; /* Subtle border on top */
+    padding-top: 20px; /* Padding to space it out from the lists */
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.featured {
+    width: 100%;
+    max-width: 1080px;
+    margin: 20px auto; /* Center and add margin */
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+.fheading {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Add margin below the heading */
+}
+
+.fheadDesc{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 10px; /* Add margin below the description */
+
+}
+.fItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add vertical spacing between sections */
+}
+
+.ftop, .fbottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.featuredItem {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1; /* Ensure the items take up equal space */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.featuredImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.featuredTitles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+.featuredTitles > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.featuredTitles > h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.featuredItem.top {
+    aspect-ratio: 16/9;
+}
+
+.featuredItem.bot {
+    aspect-ratio: 4/3;
+}
+
+.featuredItem:hover {
+    transform: scale(1.009);
+}

@@ -14,7 +14,6 @@ This project is a clone of the Booking.com website, it is a full stack website b
 ## Key Features
 #### Explore hotels across different countries
 
-
 #### Get hotels based on property guests and featured hotels
 
 #### Search hotels based on your country of visit ; dates and number of members
@@ -31,7 +30,7 @@ This project is a clone of the Booking.com website, it is a full stack website b
 
 ## More Features
 
-A login button for the user at the homepage, number of properties based on countries , property type are dynamically populated as the database is modified. Featured hotels are given priority at the homepage. After searching by the country, dates of visit and number of people, a hotel list is provided to the user with elaborate description of each hotel with images which can be expanded and explored via a slider. The user can filter hotels on the basis of minimum and maximum cost of stay per night. On selecting a hotel, the user gets the total price calculated based on number of days of visit. Then the user can reserve the rooms which are not already reserved by exploring through the various types of rooms. Then after booking the user can logout. The database modification can be done only by the users which are Admin.
+A login button for the user at the homepage, number of properties based on countries , property type are dynamically populated as the database is modified. Featured hotels are given priority at the homepage. After searching by the country, dates of visit and number of people, a hotel list is provided to the user with elaborate description of each hotel with images which can be expanded and explored via a slider. The user can filter hotels on the basis of minimum and maximum cost of stay per night. On selecting a hotel, the user gets the total price calculated based on number of days of visit. Then the user can reserve the rooms which are not already reserved by exploring through the various types of rooms. Then after booking the user can logout. The database modification can be done only by the users which are Admin. Cloudinary used to convert images to usable URL for the user to edit the database.
 
 ## Tech Stack Used
 - React and React Context API
@@ -50,7 +49,7 @@ A login button for the user at the homepage, number of properties based on count
 
 - Clone the repository by opening your terminal and navigating to the directory where you want to clone the repository. Then, run the following command:
 ```bash
-  git clone https://github.com/Blaster2398/BookMyHotel.git
+  git clone https://github.com/HardikJainGit/Booking.com.git
 ```
 
 - Navigate to the App Directory:
@@ -62,6 +61,7 @@ A login button for the user at the homepage, number of properties based on count
 ```bash
   npm install
 ```
+
 - Start the development server:
 ```bash
   npm start
@@ -71,7 +71,7 @@ A login button for the user at the homepage, number of properties based on count
   
 ## Video of Working App
 
-https://github.com/Blaster2398/BookMyHotel/assets/133494008/c088bdcb-4357-4aa5-a066-db1481e8765c
+https://github.com/HardikJainGit/Booking.com/assets/133627261/c0037158-ddc6-4e0b-a7af-25b8c76bded8
 
 
 

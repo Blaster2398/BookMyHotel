@@ -14,6 +14,14 @@ const Navbar = () => {
     console.log("User logged out");
   };
 
+  const handleClick_register = () => {
+    if (user) {
+    } else {
+      navigate("/register");
+    }
+  };
+  
+
   const handleClick = () => {
     if (user) {
     } else {
@@ -34,7 +42,7 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="navButtons">
-            <button className="navButton">Register</button>
+            <button onClick={handleClick_register} className="navButton">Register</button>
             <button onClick={handleClick} className="navButton">Login</button>
           </div>
         )}

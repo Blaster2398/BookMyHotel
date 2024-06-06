@@ -34,6 +34,24 @@ const AuthReducer = (state, action) => {
         loading: false,
         error: null,
       };
+    case "REGISTER_START":
+      return {
+        user: null,
+        loading: true,
+        error: null,
+      };
+    case "REGISTER_SUCCESS":
+      return {
+        user: action.payload,
+        loading: false,
+        error: null,
+      };
+    case "REGISTER_FAILURE":
+      return {
+        user: null,
+        loading: false,
+        error: action.payload,
+      };
     default:
       return state;
   }
@@ -42,8 +60,25 @@ const AuthReducer = (state, action) => {
 export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE);
 
+  const register = async (userData) => {
+    dispatch({ type: "REGISTER_START" });
+    try {
+      const response = await fetch("/api/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+      const data = await response.json();
+      dispatch({ type: "REGISTER_SUCCESS", payload: data });
+    } catch (error) {
+      dispatch({ type: "REGISTER_FAILURE", payload: error.message });
+    }
+  };
+
   useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(state.user)); // store even if refreshed
+    localStorage.setItem("user", JSON.stringify(state.user));
   }, [state.user]);
 
   return (
@@ -53,6 +88,7 @@ export const AuthContextProvider = ({ children }) => {
         loading: state.loading,
         error: state.error,
         dispatch,
+        register,
       }}
     >
       {children}

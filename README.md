@@ -12,6 +12,8 @@
 This project is a clone of the Booking.com website, it is a full stack website built using modern web technologies including HTML, CSS, JavaScript, React for the front end, Node.js , Express for the backend and MongoDB for the database. The project also uses JWT (JSON Web Token) for authentication and authorization, and Postman for API requests.
 
 ## Key Features
+
+
 #### Explore hotels across different countries
 
 #### Get hotels based on property guests and featured hotels
@@ -49,7 +51,7 @@ A login button for the user at the homepage, number of properties based on count
 
 - Clone the repository by opening your terminal and navigating to the directory where you want to clone the repository. Then, run the following command:
 ```bash
-  git clone https://github.com/HardikJainGit/Booking.com.git
+  git clone https://github.com/Blaster2398/BookMyHotel/tree/full-app
 ```
 
 - Navigate to the App Directory:
@@ -71,7 +73,7 @@ A login button for the user at the homepage, number of properties based on count
   
 ## Video of Working App
 
-https://github.com/HardikJainGit/Booking.com/assets/133627261/c0037158-ddc6-4e0b-a7af-25b8c76bded8
+https://github.com/Blaster2398/BookMyHotel/assets/133494008/a50fb6a6-f00c-4e7c-943f-8fdbb422543c
 
 
 

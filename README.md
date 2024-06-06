@@ -14,6 +14,7 @@ This project is a clone of the Booking.com website, it is a full stack website b
 ## Key Features
 #### Explore hotels across different countries
 
+
 #### Get hotels based on property guests and featured hotels
 
 #### Search hotels based on your country of visit ; dates and number of members
@@ -49,7 +50,7 @@ A login button for the user at the homepage, number of properties based on count
 
 - Clone the repository by opening your terminal and navigating to the directory where you want to clone the repository. Then, run the following command:
 ```bash
-  git clone 
+  git clone https://github.com/Blaster2398/BookMyHotel.git
 ```
 
 - Navigate to the App Directory:
@@ -70,7 +71,7 @@ A login button for the user at the homepage, number of properties based on count
   
 ## Video of Working App
 
-
+https://github.com/Blaster2398/BookMyHotel/assets/133494008/c088bdcb-4357-4aa5-a066-db1481e8765c
 
 
 

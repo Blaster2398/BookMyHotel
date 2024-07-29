@@ -71,9 +71,9 @@ A login button for the user at the homepage, number of properties based on count
 - Access the website by visiting 'http://localhost:3000'
 
   
-## Video of Working App
+<!--## Video of Working App
 
-<!--https://github.com/Blaster2398/BookMyHotel/assets/133494008/a50fb6a6-f00c-4e7c-943f-8fdbb422543c
+https://github.com/Blaster2398/BookMyHotel/assets/133494008/a50fb6a6-f00c-4e7c-943f-8fdbb422543c
 -->
 
 
